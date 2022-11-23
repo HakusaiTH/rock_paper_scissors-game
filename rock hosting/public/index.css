@@ -1,0 +1,212 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    position: relative;
+    display: none;
+    flex-direction: column;
+}
+
+.top,.content {
+    display: flex;
+    flex-direction: row;    
+}
+
+.top div {
+    width: 33%;
+    text-align: center;
+}
+
+.content div{
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.c_play_item,.b_play_item {
+    position: absolute;
+    left: 400px;
+    bottom: -30px;
+    width: 180px;
+    height: 180px;
+}
+
+.hp_inter {
+    position: absolute;
+    color: green;
+    left: 160px;
+    bottom: 0.5px;
+}
+
+.content h1 {
+    position: absolute;
+    color: red;
+}
+
+.c_play,.b_play {
+    width: 277px;
+    height: 260px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: -90px;    
+}
+
+.bottom,.user_inter,.sellect,.skill_top{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom {
+    position: relative;
+    background-color: gray;
+    padding: 10px;
+}
+
+.skill_top {
+    justify-content: space-around;
+}
+
+.skill {
+    display: none;
+    flex-direction: column;
+    position: relative;
+}
+
+.skill h2 {
+    position: absolute;
+    color: blue;
+    top: -38px;
+    right: 3px;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.skill_div {
+    position: relative;
+}
+
+.skill_div h3 {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+}
+
+.attack button {
+    width: 99%;
+    padding: 10px;
+}
+
+.attack button h4 {
+    margin: 0px;
+}
+
+.user_inter,.sellect,.skill {
+    width: 33%;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.user_inter img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.sellect {
+    display: flex;
+}
+
+.sellect img {
+    width: 150px;
+    height: 150px;
+}
+
+.popup {
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    width: 33%;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , 50%)
+}
+
+.popup_c {
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    width: 33%;
+    text-align: center;
+    padding: 10px 20px;
+    display: none;
+    flex-direction: column;
+    z-index: 3;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , 50%)
+}
+
+.popup_c_item {
+    display: flex;
+    flex-direction: row;
+}
+
+.popup_c_item img {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.popup h2 {
+    margin: 0px;
+}
+
+.popup ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.popup li h4 {
+    margin: 20px;
+    color: red;
+}
+
+.popup_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.popup_button button {
+    margin: 0px 10px;
+}
+.popup_button input {
+    border: 1.5px solid black;
+}
+
+.win_or_lose {
+    position: absolute;
+    display: none;
+    z-index: 3;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -600%)
+}

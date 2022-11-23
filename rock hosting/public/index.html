@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="popup">
+        <h2>กรอกชื่อ</h2>
+        <ul>
+            <li><h4>ไม่น้อยกว่า 6 ตัวอักษร</h4></li>
+            <li><h4>ไม่มากกกว่า 10 ตัวอักษร</h4></li>
+        </ul>
+        <div class="popup_button">
+            <input  id="player_name" type="text">
+            <button id="get_name" >click</button>
+        </div>
+    </div>
+    <div class="popup_c">
+        <h2>เลือกตัวละคร</h2>
+        <div class="popup_c_item">
+            <img  id="c1" src="/img/c-1.jpg" alt="">
+            <img id="c2" src="/img/c-2.jpg" alt="">
+            <img  id="c3" src="/img/c-3.png" alt="">
+        </div>
+    </div>
+    <div class="container">       
+        <div class="top">
+            <div class="top_left"><h3 id="top_player"></h3></div>
+            <div class="top_center"><h2 id="top_result" >-</h2></div>
+            <div class="right_left"><h3 id="top_computer"></h3></div>
+        </div>
+        <h1 id="win_or_lose" class="win_or_lose">Win</h1>
+        <div class="content">
+            <div class="player" id="player_div" >
+                <img src="/img/default-square.jpg" alt=""  id="c_play" class="c_play" >
+                <img src="/img/default-square.jpg" alt=""  class="c_play_item" id="player_img" >
+                <h2 id="player_hp_inter" class="hp_inter">500</h2>
+            </div>
+            <div class="computer" id="computer_div" >
+                <img src="/img/b-1.jpg" alt="" class="b_play" >
+                <img src="/img/default-square.jpg" alt=""  class="b_play_item" id="computer_img">
+                <h2 id="computer_hp_inter" class="hp_inter">500</h2>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="user_inter">
+                <img src="/img/default-square.jpg" id="c_play_user"  alt="">
+                <div class="user_text">
+                    <h2 id="user_name" ></h2>
+                    <h3 id="hp" >500/500</h3>
+                </div>
+            </div>
+            <div class="sellect">
+                <img src="/img/Untitled-3.png" id=01 alt="">
+                <img src="/img/Untitled-1.png"  id="02" alt="">
+                <img src="/img/Untitled-2.png" id=03 alt="">
+            </div>
+            <div class="skill">
+                <h2 id="cost_inter" >cost 000</h2>
+                <div class="skill_top">
+                    <div class="skill_div"><img  id="skill_01" src="/img/skill-1.jpg" alt=""><h3 class="skill_cosr_inter" >20</h3></div>
+                    <div class="skill_div"><img id="skill_02" src="/img/skill-2.jpg" alt=""><h3 class="skill_cosr_inter" >30</h3></div>
+                    <div class="skill_div"><img id="skill_03" src="/img/skill-3.jpg" alt=""><h3 class="skill_cosr_inter" >40</h3></div>
+                </div>
+                <div class="attack">
+                    <button id="button_attack"><h4>attack</h4></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
